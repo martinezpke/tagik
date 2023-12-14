@@ -1,4 +1,6 @@
+
 .wrapper {
+  background-color: #29235c;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -8,12 +10,14 @@
 
 .grip__container {
   width: 60%;
+  overflow: hidden; 
   border-radius: 36px;
   background-color: #fff;
   box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.3);
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 50vh;
+  height: auto;
   align-items: center;
 }
 
@@ -35,6 +39,7 @@
   padding: 30px;
   height: 100%;
   align-items: center;
+  transition: height 5s ease;
 }
 
 .form-login input {
@@ -49,10 +54,30 @@
   
 }
 
+.form-login form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
 .form-login .row {
   height: auto;
   border-radius: 14px;
   background-color: #f8f8f8;
+}
+
+.form-login .row-input {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.btn-sut {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .form-login i {
@@ -72,6 +97,7 @@
 
 .form-login p {
   font-size: 10px;
+  margin: 10px 0;
   &:hover{
     text-decoration: underline;
     cursor: pointer;
@@ -119,6 +145,40 @@
   }
 }
 
+.background-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/img/Parrilla Tagik-03.png"); /* Ajusta la ruta según sea necesario */
+  background-size: cover; /* O utiliza 'contain' según prefieras */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.msg-error {
+  position: relative;
+  top: -1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #e64b4b;
+  border: 1px solid #e64b4b;
+  background-color: #e64b4b23;
+  border-radius: 12px;
+  padding: 10px;
+  text-decoration: none !important;
+  cursor: auto !important;
+  transition: all 0.5s ease;
+}
+
+
+
+.msg-error::before{
+  padding: 10px;
+}
+
+.msg-error::after{
+  padding: 45px;
+}
 
 
 /* .floating-label {
