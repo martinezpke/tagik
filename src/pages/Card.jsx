@@ -50,13 +50,13 @@ const Card = () => {
                   </div>
                   <div className="more__card">
                     <button type="button">
-                      <i className="bx bx-plus"></i> VCard
+                      <i className="bx bx-plus"></i> <span>VCard</span>
                     </button>
                     <i className="bx bx-dots-vertical-rounded"></i>
                   </div>
                 </div>
 
-                <table className="cotainer__table">
+                <table className="container__table">
                   <thead>
                     <tr>
                       <th>
@@ -79,8 +79,8 @@ const Card = () => {
                       <td>Dirección de ejemplo</td>
                       <td>
                         {/* Agrega aquí tus botones de acciones */}
-                        <button>Editar</button>
-                        <button>Eliminar</button>
+                        <button id="edit"><i className='bx bxs-edit'></i></button>
+                        <button id="del"><i className='bx bxs-trash'></i></button>
                       </td>
                     </tr>
                     {/* Puedes agregar más filas según tus datos */}

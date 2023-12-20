@@ -4,9 +4,17 @@
     padding: 5px 3rem;
 }
 
+.container {
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .1);
+}
+
 .section__list h1 {
     text-align: left;
-    font-weight: 500;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #28235c;
 }
 
 .section__list .container {
@@ -24,5 +32,124 @@
     padding: 0 30px;
     color: #fff;
     background-color: #28235c;
-    
+    height: auto;
+    width: 100%;
 }
+
+.section__list .container .header__table .title__table {
+    padding: 20px;
+    display: block;
+    align-items: center;
+}
+
+.section__list .container .header__table .title__table h4{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.section__list .container .header__table .more__card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section__list .container .header__table .more__card i{
+    font-size: 27px;
+}
+
+
+.section__list .container .header__table .more__card > button {
+    border-radius: 5px;
+}
+
+.section__list .container .header__table .more__card > button,
+.section__list .container .header__table .more__card > span,
+.section__list .container .header__table .more__card button > i {
+    outline: none;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #28235c;
+    font-weight: 700;
+    padding: 4px;
+    font-size: 15px;   
+}
+
+.container__table {
+    width: 100%;
+    padding: 10px;
+}
+
+.section__list .container__table thead, 
+.section__list .container__table tbody {
+    width: 100%;
+    padding: 0 3.1rem;
+}
+
+.section__list .container__table thead tr th{
+    font-weight: 600;
+    /* text-align: start; */
+    width: 100%;
+}
+
+.section__list .container__table tbody tr td {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section__list .container__table thead tr,
+.section__list .container__table tbody tr {
+    padding: 20px 0;
+    font-size: 16px;
+    width: 100%;
+    color: #28235c;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__list .container__table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Estilo para los elementos pares */
+}
+
+.section__list .container__table tbody tr:nth-child(odd) {
+    
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Estilo para los elementos impares */
+}
+
+#edit {
+    border-radius: 3px;
+    margin-right: 13px;
+    width: 40px;
+    height: 28px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #1f7eff;
+}
+
+#del {
+    border-radius: 3px;
+    width: 40px;
+    height: 28px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #e30612;
+}
+
+/* Estilos generales para el input checkbox */
+.container__table input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid #28235c;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el checkbox */
+  }
+ 
+  
