@@ -1,0 +1,28 @@
+.section__list {
+    width: 100%;
+    margin-top: 25px;
+    padding: 5px 3rem;
+}
+
+.section__list h1 {
+    text-align: left;
+    font-weight: 500;
+}
+
+.section__list .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.section__list .container .header__table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: #fff;
+    background-color: #28235c;
+    
+}

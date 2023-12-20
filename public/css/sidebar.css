@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  height: 100vh;
+  position: relative;
+  background-color: #28235c;
+  color: #fff;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.btn-a {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.header__bar {
+  display: flex;
+  width: 230px;
+  height: 230px;
+}
+
+.header__bar img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+}
+
+.content {
+  flex: 1;
+}
+
+.topbar {
+  background-color: #fff;
+  padding: 13px;
+  box-shadow: 5px 0 8px rgba(0, 0, 0, 0.333);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 3px;
+  border-radius: 12px;
+  transition: scale 0.3s ease, background-color 0.4s ease;
+}
+
+.user-info:hover {
+  scale: 1.02;
+  border-radius: 12px;
+  background-color: #eee;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+#notif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #28235c;
+  margin-right: 8px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 0%;
+  width: 33px;
+  height: 33px;
+  transition: background-color 0.4s ease, border-radius 0.5s ease-out;
+}
+
+#notif:hover {
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.user-info i {
+  color: #28235c;
+  font-size: 30px;
+}
+
+.menu__option li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu__option a,
+i {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.menu__option i {
+  font-size: 30px !important;
+}
+
+.submenu {
+  display: none;
+}
+
+.menu__option li:hover .submenu {
+  display: block;
+}
+
+.submenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.submenu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.submenu li:hover ul {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 0;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
